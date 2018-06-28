@@ -7,8 +7,37 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-item> 
+      <ion-label>X orientation</ion-label>
+    <ion-input type="text" [(ngModel)]="xOrient"></ion-input>
+  </ion-item>
+  <ion-item> 
+      <ion-label>Y orientation</ion-label>
+      <ion-input type="text" [(ngModel)]="yOrient"></ion-input>
+    </ion-item>
+    <ion-item> 
+        <ion-label>Z orientation</ion-label>
+        <ion-input type="text" [(ngModel)]="zOrient"></ion-input>
+      </ion-item>
+      <ion-item> 
+          <ion-label>Time Stamp</ion-label>
+          <ion-input type="text" [(ngModel)]="timestamp"></ion-input>
+        </ion-item>
+
+        <button ion-button (click)="gyrascope()" full>click</button>
+
+        <ion-item> 
+            <ion-label>Acceleration X</ion-label>
+            <ion-input type="text" [(ngModel)]="accX"></ion-input>
+          </ion-item>
+          <ion-item> 
+              <ion-label>Acceleration Y</ion-label>
+              <ion-input type="text" [(ngModel)]="accY"></ion-input>
+            </ion-item>
+            <ion-item> 
+                <ion-label>Acceleration Z</ion-label>
+                <ion-input type="text" [(ngModel)]="accZ"></ion-input>
+              </ion-item>
+          <button ion-button (click)="Accelerometer()" full>click</button>
+
 </ion-content>
